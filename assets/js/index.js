@@ -8,7 +8,7 @@ function getUserInfo() {
 
 
         if (res.data.status !== 0) {
-            return layer.mag('获取用户信息失败')
+            return layer.msg('获取用户信息失败')
         }
         
         avatarAndName(res.data)
